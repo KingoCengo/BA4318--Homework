@@ -1,0 +1,7 @@
+import pandas as pd
+df = pd.read_csv("Plaza Coffee.csv", delimiter=";")
+
+#my plan was to sort the data by company name and the food ordered.
+km = (df.loc[(df['Company'] == "KPMG") & (df['Order'] == "Daily Menu")])
+print(km)
+#i could not figure out how to sum the sorted data in the quantity column. i'll change the homework submission when i figure out how to do that
